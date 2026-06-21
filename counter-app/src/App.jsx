@@ -16,11 +16,14 @@ export default function App(){
       // counter = counter + 1;//2
       // counter = counter + 1;//3
       // counter = counter + 1;//4 final output will be see.
-     setCounter(counter + 1)//what will the output 
-     setCounter(counter + 1)//what will the output 
-     setCounter(counter + 1)//what will the output 
-     setCounter(counter + 1)//what will the output => the output is increase by +1 every click like 1 2 3 4 like it.
-     
+    //  setCounter(counter + 1)//what will the output 
+    //  setCounter(counter + 1)//what will the output 
+    //  setCounter(counter + 1)//what will the output 
+    //  setCounter(counter + 1)//what will the output => the output is increase by +1 every click like 1 2 3 4 like it.
+        setCounter(prevCounter => prevCounter + 1)//value 0+1=1 the is previouscounter and usestate give us to use call-back function
+        setCounter(prevCounter => prevCounter + 1)//when value is 1+1=2
+        setCounter(prevCounter => prevCounter + 1)//2+1=3
+        setCounter(prevCounter => prevCounter + 1)//3+1=4 same thing we using second varible previouscounter hold previous value.
      console.log(counter)
      }else{
       alert("20 is last number")
