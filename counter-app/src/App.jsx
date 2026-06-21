@@ -12,11 +12,15 @@ export default function App(){
       //when presh button will be count is count = 1 ok now 
       //when press 2 last value is count = 1, after click it will 1+1=2(second press)
       //that same thing will be showing 
-      counter = counter + 1;//1
-      counter = counter + 1;//2
-      counter = counter + 1;//3
-      counter = counter + 1;//4 final output will be see.
-     setCounter(counter)
+      // counter = counter + 1;//1
+      // counter = counter + 1;//2
+      // counter = counter + 1;//3
+      // counter = counter + 1;//4 final output will be see.
+     setCounter(counter + 1)//what will the output 
+     setCounter(counter + 1)//what will the output 
+     setCounter(counter + 1)//what will the output 
+     setCounter(counter + 1)//what will the output => the output is increase by +1 every click like 1 2 3 4 like it.
+     
      console.log(counter)
      }else{
       alert("20 is last number")
