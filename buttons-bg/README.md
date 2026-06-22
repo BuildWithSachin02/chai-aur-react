@@ -1,16 +1,105 @@
-# React + Vite
+# 🎨 React Background Color Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to change the background color of the page by clicking different color buttons.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Change background color with a single click
+- Multiple color options:
+  - Red
+  - Blue
+  - Gray
+  - Black
+  - Yellow
+  - Green
+- Dynamic text color adjustment
+- Built with React Hooks (`useState`)
+- Responsive layout using Bootstrap
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Bootstrap 5
+- JavaScript (ES6+)
+- CSS
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd <project-folder>
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── components/
+│   └── BottomHeader.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 💡 How It Works
+
+The application uses React's `useState` hook to store the current background color.
+
+```jsx
+const [bgColor, setBgColor] = useState("white");
+```
+
+When a button is clicked, the state updates:
+
+```jsx
+onClick={() => setBgColor("red")}
+```
+
+React automatically re-renders the component and updates the page background color.
+
+## 📸 Preview
+
+- Click a color button.
+- Background color changes instantly.
+- Heading text color adjusts for better visibility.
+
+## 🎯 Learning Concepts
+
+- React Components
+- JSX
+- React Hooks (`useState`)
+- Event Handling (`onClick`)
+- Dynamic Styling
+- Bootstrap Integration
+
+## 👨‍💻 Author
+
+**Sachin Yadav**
+
+- Portfolio: https://sachinyadav.navyantravels.com
+- GitHub: https://github.com/BuildWithSachin02
+
+## 📄 License
+
+This project is open source and available under the MIT License.
